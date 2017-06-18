@@ -1,0 +1,83 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="{% static 'icons/favicon.ico' %}"> -->
+    <link rel="icon" href="{% static 'images/hacker.png' %}">
+
+    <title>Professional Software Developer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap-theme.min.css' %}">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'bootstrap-social/bootstrap-social.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css'  %}">
+    <link href="{% static 'css/starter-template.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Professional Portfolio</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Myself</a></li>
+            <li><a href="articles">Articles</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="resume">Resume</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Social Profiles</li>
+                <li><a class="btn btn-block btn-social btn-xs btn-linkedin"
+                       href="https://www.linkedin.com/in/matthewmcguire4/" target="_blank"><i class="fa
+                       fa-linkedin"></i> My LinkedIn Profile</a></li>
+                <li><a class="btn btn-block btn-social btn-xs btn-github" href="https://github.com/howard-roark"
+                        target="_blank"><i class="fa fa-github"></i> My GitHub Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Site Nav</li>
+                <li><a href="articles"><i class="fa fa-book" aria-hidden="true"></i>
+                         Articles</a></li>
+                <li><a href="projects"><i class="fa fa-code" aria-hidden="true"></i>
+                         Projects</a></li>
+                <li><a href="resume"><i class="fa fa-briefcase" aria-hidden="true"></i>
+                         Resume</a></li>
+                <li><a href="contact"><i class="fa fa-address-card" aria-hidden="true"></i>
+                         Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    {% block content  %}
+    {% endblock  %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'jquery/dist/jquery.slim.min.js'  %}" ></script>
+    <script>window.jQuery || document.write('<script src="{% static 'jquery/dist/jquery.min.js'  %}"><\/script>')</script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>

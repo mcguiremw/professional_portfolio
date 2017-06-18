@@ -1,0 +1,26 @@
+body {
+  padding-top: 2rem;
+  background-color: #D3D3D3;
+}
+
+.jumbotron {
+    background-color: #C8C8C8;
+}
+
+/*-- change navbar dropdown color --*/
+.dropdown-menu {
+    background-color: #F5F5F5;
+}
+
+.divider {
+    background-color: #000000;
+}
+
+.dropdown-menu > li > a {
+    color: #A9A9A9;
+}
+
+.starter-template {
+  padding: 1rem 1rem;
+  text-align: center;
+}
