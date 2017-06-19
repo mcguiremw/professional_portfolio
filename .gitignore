@@ -118,3 +118,5 @@ tests/report/
 
 # CUSTOM FOR BLOG
 secret_settings.py
+ve_blog/
+*.sw[op]
