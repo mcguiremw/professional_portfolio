@@ -19,7 +19,7 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{% static 'bootstrap-social/bootstrap-social.css' %}">
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css'  %}">
-    <link href="{% static 'css/starter-template.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/starter-template.css' %}">
   </head>
 
   <body>
@@ -34,15 +34,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Professional Portfolio</a>
+          <a class="navbar-brand" href="/home">Professional Portfolio</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Myself</a></li>
-            <li><a href="articles">Articles</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="resume">Resume</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li class="active"><a href="/home">Myself</a></li>
+            <li><a href="/articles">Articles</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -54,13 +54,13 @@
                         target="_blank"><i class="fa fa-github"></i> My GitHub Profile</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Site Nav</li>
-                <li><a href="articles"><i class="fa fa-book" aria-hidden="true"></i>
+                <li><a href="/articles"><i class="fa fa-book" aria-hidden="true"></i>
                          Articles</a></li>
-                <li><a href="projects"><i class="fa fa-code" aria-hidden="true"></i>
+                <li><a href="/projects"><i class="fa fa-code" aria-hidden="true"></i>
                          Projects</a></li>
-                <li><a href="resume"><i class="fa fa-briefcase" aria-hidden="true"></i>
+                <li><a href="/resume"><i class="fa fa-briefcase" aria-hidden="true"></i>
                          Resume</a></li>
-                <li><a href="contact"><i class="fa fa-address-card" aria-hidden="true"></i>
+                <li><a href="/contact"><i class="fa fa-address-card" aria-hidden="true"></i>
                          Contact</a></li>
               </ul>
             </li>

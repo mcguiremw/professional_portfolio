@@ -7,6 +7,12 @@ body {
     background-color: #C8C8C8;
 }
 
+#bio {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
 /*-- change navbar dropdown color --*/
 .dropdown-menu {
     background-color: #F5F5F5;

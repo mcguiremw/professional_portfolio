@@ -1,22 +1,16 @@
+{% extends 'blog/base.html' %}
 {% load staticfiles %}
 
-<html>
-    <head>
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap-theme.min.css' %}">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">CS Blog</a></h1>
+{% block content %}
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            {% for post in posts %}
+                <div>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <h4>Published: {{ post.published_date }}</h4>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
-
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </body>
-</html>
+    </div>
+{% endblock %}

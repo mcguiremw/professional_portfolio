@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['192.168.56.69']
 
 INSTALLED_APPS = [
     'suit',
-    'suit-redactor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
