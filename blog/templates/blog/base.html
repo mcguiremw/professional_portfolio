@@ -10,7 +10,7 @@
     <!-- <link rel="icon" href="{% static 'icons/favicon.ico' %}"> -->
     <link rel="icon" href="{% static 'images/hacker.png' %}">
 
-    <title>Professional Software Developer</title>
+    <title>Tech-Debt-Averse Programmer</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- <span></span> -->
-          <a class="navbar-brand" href="/home" title="Professional Portfolio"> Professional Portfolio
+          <a class="navbar-brand" href="/home" title="Professional Portfolio"> Portfolio
             <img src="{% static 'images/hacker.png' %}" style="max-width:65px; margin-top:-42px; margin-left:-150px;">
           </a>
         </div>
@@ -45,7 +45,6 @@
             <li><a href="/articles">Articles</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/resume">Resume</a></li>
-            <li><a href="/contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Social Profiles <span class="caret"></span></a>
@@ -60,18 +59,27 @@
                 <li class="dropdown-header">Site Nav</li>
                 <li><a href="/articles"><i class="fa fa-book" aria-hidden="true"></i>
                          Articles</a></li>
-                <li><a href="/projects"><i class="fa fa-code" aria-hidden="true"></i>
+                <li><a href="/projects"><i class="fa fa-terminal" aria-hidden="true"></i>
                          Projects</a></li>
                 <li><a href="/resume"><i class="fa fa-briefcase" aria-hidden="true"></i>
                          Resume</a></li>
-                <li><a href="/contact"><i class="fa fa-address-card" aria-hidden="true"></i>
-                         Contact</a></li>
               </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <a href="mailto:matt@mwmcguire.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email Me (if you
+                    must)</a>
+            </div>
+        </div>
+    </footer>
 
     {% block content  %}
     {% endblock  %}

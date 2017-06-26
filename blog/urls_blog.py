@@ -1,4 +1,5 @@
 from django.conf.urls import url, include
+from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
@@ -7,5 +8,4 @@ urlpatterns = [
         url(r'articles/$', views.post_list, name='post_list'),
         url(r'projects/$', views.projects, name='projects'),
         url(r'resume/$', views.resume, name='resume'),
-        url(r'contact/$', views.contact, name='contact'),
 ]
