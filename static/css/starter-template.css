@@ -1,16 +1,20 @@
 body {
+  font-family: 'Raleway', sans-serif;
   padding-top: 2rem;
   background-color: #D3D3D3;
 }
 
-.jumbotron {
-    background-color: #C8C8C8;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Athiti', sans-serif;
+  font-weight: 900;
 }
 
 #bio {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200;
+    font-size: 18px;
+}
+
+.jumbotron {
+    background-color: #C8C8C8;
 }
 
 /*-- change navbar dropdown color --*/

@@ -74,11 +74,7 @@ class EducationExperience(Experience):
     gpa = models.DecimalField(max_digits=3, decimal_places=2)
 
     def __str__(self):
-        return 'WORK'
-        # return """
-        #     Educational Experience ID: {self.exp}\n
-        #     School: {self.school}\n
-        #     """.format(self=self)
+        return major
 
 
 class VolunteerExperience(Experience):
@@ -93,15 +89,13 @@ class VolunteerExperience(Experience):
     reason = models.TextField()
 
     def __str__(self):
-        return """
-            Volunteer Experience ID: {self.exp}\n
-            Volunteer Org: {self.org}\n
-            """.format(self=self)
+        return org
 
 # The interest models may be expanded to give more detail in bootstrap wells
 # along the gutters of the site.  Will be in a feature request at some point.
 class PersonalInterest(models.Model):
     interest = models.CharField(max_length=50)
+    rank = models.IntegerField(default=0)
 
     def __str__(self):
         return self.interest
@@ -109,6 +103,7 @@ class PersonalInterest(models.Model):
 
 class ProfessionalInterest(models.Model):
     interest = models.CharField(max_length=50)
+    rank = models.IntegerField(default=0)
 
     def __str__(self):
         return self.interest

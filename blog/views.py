@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post
+from .models import Post, ShortBio, PersonalInterest, ProfessionalInterest
 
 
 def index(request):
-    return render(request, 'blog/index.html', {})
+    bio = ShortBio.objects.get()
+    personal_interests = PersonalInterest.objects.all().order_by('rank')
+    professional_interests = ProfessionalInterest.objects.all().order_by('rank')
+    return render(request, 'blog/index.html', {'bio': bio,
+        'per_ints': personal_interests,
+        'pro_ints': professional_interests})
 
 def articles(request):
     return render(request, 'blog/construction.html', {})
