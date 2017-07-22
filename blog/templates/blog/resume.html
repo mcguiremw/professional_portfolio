@@ -1,0 +1,87 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h2>OBJECTIVE</h2>
+            <p>{{ objective.obj }}
+        </div>
+    </div>
+
+    <div class="container" id="resume_container">
+        <div class="row">
+            <div class="col-md-12" id="education">
+                <h3>EDUCATION</h3>
+                {% for exp in ed_exps %}
+                    <div id="exp_header">
+                        <div class="col-md-6" id="exp_header_left_col">
+                            <div><h4>{{ exp.school }}</h4></div>
+                            <div><i><b>Major </b>{{ exp.major }}</i></div>
+                            <div><i><b>Minor </b>{{ exp.minor }}</i></div>
+                        </div>
+                        <div class="col-md-6" id="exp_header_right_col">
+                            <div><h4>{{ exp.location }}</h4></div>  
+                            <div><i>{{ exp.from_date|date:"M Y" }} - {{exp.to_date|date:"M Y" }}</i></div>
+                            <div><i><b>GPA </b>{{ exp.gpa }}</i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="exp_body">
+                        {{ exp.description|safe }}
+                    </div>
+                    <p>&nbsp;</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="resume_container">
+        <div class="row">
+            <div class="col-md-12" id="work">
+                <h3>PROFESSIONAL EXPERIENCE</h3>
+                {% for exp in pro_exps %}
+                    <div id="exp_header">
+                        <div class="col-md-6" id="exp_header_left_col">
+                            <div><h4>{{ exp.employer }}</h4></div>
+                            <div><b><i>{{ exp.job_title }}</i></b></div>
+                        </div>
+                        <div class="col-md-6" id="exp_header_right_col">
+                            <div><h4>{{ exp.location }}</h4></div>  
+                            <div><i>{{ exp.from_date|date:"M Y" }} - {{exp.to_date|date:"M Y" }}</i></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="exp_body">
+                        {{ exp.description|safe }}
+                    </div>
+                    <p>&nbsp;</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="resume_container">
+        <div class="row">
+            <div class="col-md-12" id="volunteer">
+                <h3>VOLUNTEER EXPERIENCE</h3>
+                {% for exp in vol_exps %}
+                    <div id="exp_header">
+                        <div class="col-md-6" id="exp_header_left_col">
+                            <div><h4>{{ exp.org }}</h4></div>
+                            <div><b><i>{{ exp.summary }}</i></b></div>
+                        </div>
+                        <div class="col-md-6" id="exp_header_right_col">
+                            <div><h4>{{ exp.location }}</h4></div>  
+                            <div><b><i>{{ exp.from_date|date:"M Y" }} - {{exp.to_date|date:"M Y" }}</i></b></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="ed_exp_body">
+                        {{ exp.description|safe }}
+                    </div>
+                    <p>&nbsp;</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

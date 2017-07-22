@@ -10,7 +10,7 @@
     <!-- <link rel="icon" href="{% static 'icons/favicon.ico' %}"> -->
     <link rel="icon" href="{% static 'images/hacker.png' %}">
 
-    <title>Professional Software Developer</title>
+    <title>Tech-Debt-Averse Programmer</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{% static 'bootstrap-social/bootstrap-social.css' %}">
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css'  %}">
     <link rel="stylesheet" href="{% static 'css/starter-template.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Athiti:600|Raleway" rel="stylesheet"> 
   </head>
 
   <body>
@@ -34,34 +35,35 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/home">Professional Portfolio</a>
+          <!-- <span></span> -->
+          <a class="navbar-brand" href="/home" title="Professional Portfolio">PORTFOLIO
+            <img src="{% static 'images/hacker.png' %}" style="max-width:65px; margin-top:-42px; margin-left:-150px;">
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/home">Myself</a></li>
-            <li><a href="/articles">Articles</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li class="active"><a href="/home">MYSELF</a></li>
+            <li><a href="/articles"> ARTICLES</a></li>
+            <li><a href="/projects"> PROJECTS</a></li>
+            <li><a href="/resume"> RESUME</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">SOCIAL PROFILES <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">Social Profiles</li>
                 <li><a class="btn btn-block btn-social btn-xs btn-linkedin"
                        href="https://www.linkedin.com/in/matthewmcguire4/" target="_blank"><i class="fa
-                       fa-linkedin"></i> My LinkedIn Profile</a></li>
+                       fa-linkedin"></i> LinkedIn Profile</a></li>
                 <li><a class="btn btn-block btn-social btn-xs btn-github" href="https://github.com/howard-roark"
-                        target="_blank"><i class="fa fa-github"></i> My GitHub Profile</a></li>
+                        target="_blank"><i class="fa fa-github"></i> GitHub Profile</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Site Nav</li>
                 <li><a href="/articles"><i class="fa fa-book" aria-hidden="true"></i>
-                         Articles</a></li>
-                <li><a href="/projects"><i class="fa fa-code" aria-hidden="true"></i>
-                         Projects</a></li>
+                         ARTICLES</a></li>
+                <li><a href="/projects"><i class="fa fa-terminal" aria-hidden="true"></i>
+                         PROJECTS</a></li>
                 <li><a href="/resume"><i class="fa fa-briefcase" aria-hidden="true"></i>
-                         Resume</a></li>
-                <li><a href="/contact"><i class="fa fa-address-card" aria-hidden="true"></i>
-                         Contact</a></li>
+                         RESUME</a></li>
               </ul>
             </li>
           </ul>
@@ -71,6 +73,17 @@
 
     {% block content  %}
     {% endblock  %}
+
+    <!-- <footer class="footer">                                                                                              -->
+    <!--     <div class="container">                                                                                          -->
+    <!--         <div class="col-md-4"></div>                                                                                 -->
+    <!--         <div class="col-md-4"></div>                                                                                 -->
+    <!--         <div class="col-md-4">                                                                                       -->
+    <!--             <a href="mailto:matt@mwmcguire.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email Me (if you -->
+    <!--                 must)</a>                                                                                            -->
+    <!--         </div>                                                                                                       -->
+    <!--     </div>                                                                                                           -->
+    <!-- </footer>                                                                                                            -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
