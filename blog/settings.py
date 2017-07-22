@@ -28,7 +28,10 @@ ALLOWED_HOSTS = ['192.168.56.69']
 # Application definition
 
 INSTALLED_APPS = [
-    'suit',
+    'grappelli',
+    'ckeditor',
+    'ckeditor_uploader',
+    # 'django-pygments',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'blog',
-    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -107,3 +109,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 MEDIA_ROOT = '/media/'
+CKEDITOR_UPLOAD_PATH = 'uploads/'

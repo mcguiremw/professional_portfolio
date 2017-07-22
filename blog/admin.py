@@ -1,14 +1,16 @@
 from django.contrib import admin
-import models as m
+from django import forms
+import models
 
 # How to separate this by section of site not app itself, not a high priority
 # Blog posts
-admin.site.register(m.Post)
+admin.site.register(models.Post)
 # Resume
-admin.site.register(m.WorkExperience)
-admin.site.register(m.EducationExperience)
-admin.site.register(m.VolunteerExperience)
+admin.site.register(models.Objective)
+admin.site.register(models.ProfessionalExperience)
+admin.site.register(models.EducationExperience)
+admin.site.register(models.VolunteerExperience)
 # Bio
-admin.site.register(m.PersonalInterest)
-admin.site.register(m.ProfessionalInterest)
-admin.site.register(m.ShortBio)
+admin.site.register(models.PersonalInterest)
+admin.site.register(models.ProfessionalInterest)
+admin.site.register(models.ShortBio)

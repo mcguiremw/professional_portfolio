@@ -1,19 +1,19 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 
-{% block content  %}
+{% block content %}
     <div class="container theme-showcase" role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <!-- Intended audiences for the site -->
       <div class="jumbotron">
-        <h1>Intended Audiences</h1>
-        <p>There are 3 audiences that should be able to benefit from this web application.
-        The first being myslef, this site will act as a place for me to document projects, keep an up-to-date resume and leave
-        myself breadcrumbs and instructions for various tools and systems I have used.  The next group I hope will benefit
-        from this site are recruiters and employers.  I hope the information presented throughout this application
+        <h2>INTENDED AUDIENCES</h2>
+        <p>There are 3 audiences that will benefit from this web application.
+        The first being myself, this site will act as a place for me to document projects, keep an up-to-date resume and leave
+        myself breadcrumbs and instructions for various tools and systems I have setup and used.  The next group that will benefit
+        from this site are recruiters and hiring managers, the information presented throughout this application
         will make it easier to determine if I am a good fit for roles needing to be filled.  Lastly I
-        hope this page ends up being useful for those who have run into similar problems I have and that my solutions
+        hope my articles are useful for those who have run into similar problems I have and that my solutions
         can help them find theirs.</p>
       </div>
 
@@ -22,10 +22,10 @@
           <div class="row">
             <div class="col-md-8" id="bio">
               <div class="row">
-                <h2>Short Bio</h2>
+                <h3>SHORT BIO</h3>
                 <p>{{ bio.bio|linebreaks }}</p>
                 <div class="col-md-6" id="bio">
-                    <h3>Professional Interests</h3>
+                    <h4>PROFESSIONAL INTERESTS</h4>
                     <ul>
                         {% for i in pro_ints  %} 
                             <li>{{ i.interest }}</li>
@@ -33,7 +33,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6" id="bio">
-                    <h3>Personal Interests</h3>
+                    <h4>PERSONAL INTERESTS</h4>
                     <ul>
                         {% for i in per_ints  %} 
                             <li>{{ i.interest }}</li>
