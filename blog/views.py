@@ -1,16 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import *
 
 
 def index(request):
-    bio = ShortBio.objects.get()
+    bio = get_object_or_404(ShortBio)
     personal_interests = PersonalInterest.objects.all().order_by('rank')
     professional_interests = ProfessionalInterest.objects.all().order_by('rank')
     return render(request, 'blog/index.html', {'bio': bio,
                                                'per_ints': personal_interests,
                                                'pro_ints': professional_interests})
-
 
 def articles(request):
     return render(request, 'blog/construction.html', {})

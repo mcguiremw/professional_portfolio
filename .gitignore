@@ -118,5 +118,6 @@ tests/report/
 
 # CUSTOM FOR BLOG
 secret_settings.py
+default_ve/
 ve_blog/
 *.sw[op]
