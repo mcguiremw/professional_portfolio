@@ -120,4 +120,5 @@ tests/report/
 secret_settings.py
 default_ve/
 ve_blog/
+static/
 *.sw[op]
