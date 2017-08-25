@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h2>Articles in the works</h2>
+            <ul>
+                <li>How I have learned to transition leadership lessons from the Marines to valuable skills as a
+                    professional software engineer</li>
+                <li>Lessons learned from QA used when designing solutions</li>
+                <li>Sockets and other low-level wizadry for entrepeneurs getting into web development</li>
+            </ul>
+            <!-- {% for post in posts %}                               -->
+            <!--     <div>                                             -->
+            <!--         <h2><a href="">{{ post.title }}</a></h2>      -->
+            <!--         <h4>Published: {{ post.published_date }}</h4> -->
+            <!--         <p>{{ post.text|linebreaksbr }}</p>           -->
+            <!--     </div>                                            -->
+            <!-- {% endfor %}                                          -->
+        </div>
+    </div>
+{% endblock %}

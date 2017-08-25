@@ -12,11 +12,11 @@ def index(request):
                                                'pro_ints': professional_interests})
 
 def articles(request):
-    return render(request, 'blog/construction.html', {})
+    return render(request, 'blog/articles.html', {})
 
 
 def projects(request):
-    return render(request, 'blog/construction.html', {})
+    return render(request, 'blog/projects.html', {})
 
 
 def resume(request):
@@ -31,4 +31,4 @@ def resume(request):
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(
         'published_date')
-    return render(request, 'blog/construction.html', {'posts': posts})
+    return render(request, 'blog/articles.html', {'posts': posts})
