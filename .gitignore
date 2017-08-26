@@ -122,3 +122,5 @@ default_ve/
 ve_blog/
 static/
 *.sw[op]
+auth_dump.json
+blog_dump.json
